@@ -1,7 +1,7 @@
 import java.util.PriorityQueue;
 import java.util.*;
 
-public class _2_InsertInHeap {
+public class _2_InsertInHeap { // here in one code all funcions
 
     static class Heap {
         ArrayList<Integer> arr = new ArrayList<>();
@@ -17,6 +17,10 @@ public class _2_InsertInHeap {
                 arr.set(x, arr.get(par));
                 arr.set(par, temp);
             }
+        }
+
+        public int peek() {
+            return arr.get(0);
         }
     }
 
